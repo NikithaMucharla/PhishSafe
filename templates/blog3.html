@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>How to Recognize Phishing Emails: 5 Telltale Signs to Watch For</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo-main.png" rel="icon">
+  <link href="../assets/img/logo-main.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <span>PhishSafe</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="{{url_for('index')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{url_for('aboutus')}}">About</a></li>
+         <li class="dropdown"><a href="{{url_for('services')}}"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+            <li><a href="{{url_for('report')}}">Report Phishing</a></li>
+            <li><a href="{{url_for('quizzes')}}">Quizzes</a></li>
+            <li><a href="{{url_for('ev')}}">Educational Resources</a></li>
+            <li><a class="active" href="{{url_for('blog')}}">Articles</a></li>
+            <!-- <li><a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+          </ul>
+        </li>
+          <li><a class="nav-link scrollto" href="{{url_for('team')}}">Team</a></li>
+          <li><a class="active" href="{{url_for('blog')}}">Blog</a></li>
+          
+
+          <li><a class="nav-link scrollto" href="{{url_for('contact')}}">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="../templates/phishing.html">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{{url_for('index')}}">Home</a></li>
+          <li><a href="{{url_for('blog')}}">Blog</a></li>
+          <li><a href="{{url_for('blog3')}}">How to Recognize Phishing Emails</a></li>
+        </ol>
+        <!-- <h2>Blog Single</h2> -->
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog" >
+      <div class="container" data-aos="fade-up" >
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="../assets/img/blog/blog4.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="{{url_for('blog3')}}">How to Recognize Phishing Emails: 5 Telltale Signs to Watch For</a>
+              </h2>
+
+              <div class="entry-content">
+                <p>
+                    In the vast and interconnected world of the internet, phishing attacks have become a prevalent threat that can compromise your personal information and financial security. Phishing emails are cleverly crafted to mimic legitimate communications from trusted sources, tricking recipients into divulging sensitive data or clicking on malicious links. 
+                </p>
+
+                <p>
+                    Learning to recognize the signs of phishing emails is an essential skill to protect yourself from these cyber threats. In this comprehensive guide, we'll explore five telltale signs that can help you identify phishing emails and stay one step ahead of cybercriminals.
+                </p>
+
+                <h3>1. Unusual Sender's Email Address</h3>
+                <p>
+                    A common tactic used by cybercriminals is to create email addresses that closely resemble those of legitimate organizations. However, upon closer inspection, you might notice slight variations or misspellings that indicate a fake email address. Always check the sender's email address carefully, focusing on the domain part (the portion after the "@" symbol). Legitimate companies will use their official domain names, while phishing emails often use altered versions.
+                </p>
+
+                <p>
+                    For instance, if you receive an email from "support@yourbankname-checking.com" instead of the genuine "support@yourbankname.com," it's likely a phishing attempt. Trust your instincts and verify the authenticity of the sender's email address before taking any action.
+                </p>
+
+                <h3>2. Urgency and Emotional Language</h3>
+                <p>
+                    Phishing emails often employ urgency and emotional triggers to manipulate recipients into making impulsive decisions. These emails might claim that your account is compromised, a payment is overdue, or you've won an unexpected prize. The urgency is designed to make you act quickly without thinking critically.
+                </p>
+                <p>
+                    Pay close attention to the language used in the email. Phishers often use fear, excitement, or curiosity to evoke an emotional response. Legitimate organizations communicate in a professional and composed manner, providing clear and factual information. If an email insists on immediate action or tugs at your emotions, take a moment to assess the situation. Reach out to the organization through official channels to verify the legitimacy of the email's claims.
+                </p>
+
+                <h3>3. Suspicious Links and Hovering</h3>
+                <p>
+                    Links embedded in phishing emails can lead to fraudulent websites that aim to steal your personal information or install malware on your device. These links may appear legitimate at first glance, but you can uncover their true destination by hovering your cursor over them without clicking. The actual URL will be displayed in the status bar of your browser.
+                </p>
+
+                <p>
+                    If the displayed URL doesn't match the official domain of the organization or seems unrelated to the content of the email, it's a clear indication of a phishing attempt. Cybercriminals often use deceptive links to lead you to fake websites that closely resemble legitimate ones. Exercise caution and avoid clicking on any links that raise suspicion.
+                </p>
+
+                <h3>4. Misspellings and Poor Grammar</h3>
+
+                <p>
+                    Phishing emails frequently contain grammatical errors, misspelled words, and awkward sentence structures. These mistakes occur because cybercriminals are more focused on crafting deceptive messages than on ensuring flawless language.
+                </p>
+
+                <p>
+                    Legitimate organizations take pride in their communication and maintain a professional tone. If you notice spelling mistakes, grammatical errors, or unnatural language usage in an email, it's a strong indication that the email is not from a trustworthy source. Treat such emails with skepticism and refrain from clicking on any links or providing personal information.
+                </p>
+
+                <h3>5. Requests for Sensitive Information</h3>
+                <p>
+                    Perhaps the most critical sign of a phishing email is a request for sensitive information. Cybercriminals often ask for confidential data such as passwords, Social Security numbers, credit card details, or login credentials. Legitimate organizations would never request such information via email.
+                </p>
+
+                <p>
+                    Be cautious when an email prompts you to provide sensitive data, even if the email appears to be from a trusted entity. Verify the authenticity of the request through alternative means, such as contacting the organization directly using official contact information. Remember that your personal and financial information is valuable, and you should never share it in response to an email request.
+                </p>
+                <br>
+
+                <div class="entry-img">
+                  <img src="../assets/img/blog/Phishing-email-example-1024x772.jpeg" alt="" class="img-fluid">
+                </div>
+                
+                <h3>Staying Safe and Reporting</h3>
+                <p>
+                    Recognizing phishing emails is a vital aspect of maintaining your online security. By familiarizing yourself with these five telltale signs, you can significantly reduce the risk of falling victim to phishing scams. Additionally, reporting any suspicious emails to your email provider and relevant authorities is crucial. Reporting helps authorities take action against cybercriminals and prevents others from being targeted by the same scam.
+                </p>
+
+                <p>
+                    In conclusion, the internet's vastness offers incredible opportunities, but it also exposes us to various threats. Learning to recognize phishing emails empowers you to navigate the digital landscape with confidence. By scrutinizing sender's email addresses, assessing the language used, verifying links, identifying mistakes, and guarding your sensitive information, you can stay vigilant and protect yourself from falling into the traps set by cybercriminals. Stay cautious, stay informed, and stay secure in the online world.
+                </p>
+
+              </div>
+
+          
+
+            </article><!-- End blog entry -->
+
+            <div class="blog-author d-flex align-items-center">
+              <img src="../assets/img/team/nikitha.jpg" class="rounded-circle float-left" alt="">
+              <div>
+                <h4>Nikitha</h4>
+                <div class="social-links">
+                  <a target="_blank" href="https://twitter.com/i/flow/login/#"><i class="bi bi-twitter"></i></a>
+                  <a target="_blank" href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                </div>
+                <p>
+                  A passionate fourth-year student diving into the world of detecting phishing websites. Join her as she navigates through her college project, unraveling insights and strategies to identify and combat phishing threats.
+                </p>
+              </div>
+            </div><!-- End blog author bio -->
+          </div>  
+
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+              <img src="../assets/img/logo.png" alt="">
+              <span>PhishSafe</span>
+            </a>
+            <p>
+              Guarding Against Phishing Threats. Paste a link, and we'll tell you if it's safe to click, ensuring your online safety. Join us to browse, work, and connect with confidence.
+            </p>
+            <div class="social-links mt-3">
+              <a target="_blank" href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a target="_blank" href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('index')}}">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('aboutus')}}">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('services')}}">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('tos')}}">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('pp')}}">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('report')}}">Report Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('quizzes')}}">Quizzes</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('ev')}}">Educational Resources</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('blog')}}">Articles</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              SVIT <br>
+              Secunderabad, Telangana 500003<br>
+              India<br><br>
+              <strong>Phone:</strong>  +91 9701346267<br>
+              <strong>Email:</strong> phishhsafe@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

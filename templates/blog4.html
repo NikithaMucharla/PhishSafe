@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Phishing Prevention: Best Practices for Individuals and Organizations</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo-main.png" rel="icon">
+  <link href="../assets/img/logo-main.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <span>PhishSafe</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="{{url_for('index')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{url_for('aboutus')}}">About</a></li>
+          <li class="dropdown"><a href="{{url_for('services')}}"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+              <li><a href="{{url_for('report')}}">Report Phishing</a></li>
+              <li><a href="{{url_for('quizzes')}}">Quizzes</a></li>
+              <li><a href="{{url_for('ev')}}">Educational Resources</a></li>
+              <li><a class="active" href="{{url_for('blog')}}">Articles</a></li>
+              <!-- <li><a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{{url_for('team')}}">Team</a></li>
+          <li><a class="active" href="{{url_for('blog')}}">Blog</a></li>
+        
+
+          <li><a class="nav-link scrollto" href="{{url_for('contact')}}">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="../templates/phishing.html">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{{url_for('index')}}">Home</a></li>
+          <li><a href="{{url_for('blog')}}">Blog</a></li>
+          <li><a href="{{url_for('blog4')}}">Phishing Prevention</a></li>
+        </ol>
+        <!-- <h2>Blog Single</h2> -->
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog" >
+      <div class="container" data-aos="fade-up" >
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="../assets/img/blog/blog5.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="{{url_for('blog4')}}">Phishing Prevention: Best Practices for Individuals and Organizations</a>
+              </h2>
+
+              <div class="entry-content">
+                <p>
+                    In today's digitally connected world, the threat of phishing attacks looms large. Cybercriminals use deceptive tactics to lure individuals and organizations into divulging sensitive information or falling victim to malware. 
+                </p>
+
+                <p>
+                    Phishing prevention is a shared responsibility, requiring both individuals and organizations to adopt proactive measures to safeguard their digital lives. In this comprehensive guide, we'll explore the best practices for thwarting phishing attempts and enhancing online security.
+                </p>
+
+                <h3>Understanding Phishing Attacks</h3>
+                <p>
+                    Phishing attacks often take the form of emails, messages, or websites that appear legitimate but are designed to deceive recipients. Cybercriminals exploit human psychology, urgency, and trust to manipulate victims into taking action that compromises their security.
+                </p>
+
+                <h3>Best Practices for Individuals:</h3>
+
+                <p>
+                    <b>1. Be Skeptical: </b>
+                    Exercise caution with unsolicited emails or messages, especially those asking for personal or financial information. Verify the sender's identity before responding or clicking on links.
+                </p>
+
+                <p>
+                    <b>2. Hover Before You Click:</b>
+                    Hover your cursor over links in emails to reveal the actual URL. If it looks suspicious, refrain from clicking. Only visit trusted websites directly.
+                </p>
+
+                <p>
+                    <b>3. Beware of Urgent Requests:</b>
+                    Phishers often create a sense of urgency to pressure you into acting quickly. Don't let urgency cloud your judgment. Verify requests through other channels.
+                </p>
+
+                <p>
+                    <b>4. Check for Spelling and Grammar:</b>
+                    Poor language skills in emails are red flags. Legitimate organizations maintain professional communication.
+                </p>
+
+                <p>
+                    <b>5. Keep Software Updated:</b>
+                    Regularly update your operating system, browsers, and security software to patch vulnerabilities that attackers may exploit.
+                </p>
+
+                <h3>Best Practices for Organizations:</h3>
+
+                <p>
+                    <b>1. Employee Education: </b>
+                    Train employees to recognize phishing attempts and report suspicious emails. Regularly conduct phishing simulations to reinforce awareness.
+                </p>
+
+                <p>
+                    <b>2. Multi-Factor Authentication (MFA):</b>
+                    Implement MFA for accessing sensitive accounts. Even if credentials are compromised, an additional layer of security adds protection.
+                </p>
+
+                <p>
+                    <b>3. Secure Email Gateways:</b>
+                    Deploy email filtering solutions to identify and block phishing emails before they reach employees' inboxes.
+                </p>
+
+                <p>
+                    <b>4. Regular Updates and Patching:</b>
+                    Keep all software, including operating systems and applications, up to date to minimize vulnerabilities.
+                </p>
+
+                <p>
+                    <b>5. Monitor for Anomalies:</b>
+                    Implement monitoring systems to detect unusual network or system behavior, which could indicate a phishing attack in progress.
+                </p>
+
+                <h3>Collaborative Effort for Prevention:</h3>
+                <p>
+                    Phishing prevention is not solely an individual or organizational responsibility – it's a collaborative effort. Individuals need to remain vigilant and educate themselves about phishing tactics. Organizations must invest in cybersecurity measures, including employee training, robust infrastructure, and incident response plans.
+                </p>
+
+                <p>
+                    By adopting these best practices, individuals and organizations can build strong defenses against phishing attacks. Remember that the key to prevention lies in awareness, skepticism, and proactive security measures. By working together, we can create a safer digital environment for everyone. 
+                </p>
+
+                <p>
+                    In a world where cyber threats are ever-present, phishing prevention is a critical step toward fortifying your online security. Stay informed, stay cautious, and stay protected.
+                </p>
+
+              </div>
+
+      
+
+            </article><!-- End blog entry -->
+
+            <div class="blog-author d-flex align-items-center">
+              <img src="../assets/img/team/nisha.jpg" class="rounded-circle float-left" alt="">
+              <div>
+                <h4>Nisha Kumari</h4>
+                <div class="social-links">
+                  <a target="_blank" href="https://twitter.com/i/flow/login/#"><i class="bi bi-twitter"></i></a>
+                  <a target="_blank" href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                </div>
+                <p>
+                  A passionate fourth-year student diving into the world of detecting phishing websites. Join her as she navigates through her college project, unraveling insights and strategies to identify and combat phishing threats.
+                </p>
+              </div>
+            </div><!-- End blog author bio -->
+
+      
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+              <img src="../assets/img/logo.png" alt="">
+              <span>PhishSafe</span>
+            </a>
+            <p>
+              Guarding Against Phishing Threats. Paste a link, and we'll tell you if it's safe to click, ensuring your online safety. Join us to browse, work, and connect with confidence.
+            </p>
+            <div class="social-links mt-3">
+              <a target="_blank" href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a target="_blank" href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('index')}}">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('aboutus')}}">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('services')}}">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('tos')}}">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('pp')}}">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('report')}}">Report Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('quizzes')}}">Quizzes</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('ev')}}">Educational Resources</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('blog')}}">Articles</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              SVIT <br>
+              Secunderabad, Telangana 500003<br>
+              India<br><br>
+              <strong>Phone:</strong>  +91 9701346267<br>
+              <strong>Email:</strong> phishhsafe@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

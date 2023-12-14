@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Different Types of Phishing Attacks</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo-main.png" rel="icon">
+  <link href="../assets/img/logo-main.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <span>PhishSafe</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="{{url_for('index')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{url_for('aboutus')}}">About</a></li>
+          <li class="dropdown"><a href="{{url_for('services')}}"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+              <li><a href="{{url_for('report')}}">Report Phishing</a></li>
+              <li><a href="{{url_for('quizzes')}}">Quizzes</a></li>
+              <li><a href="{{url_for('ev')}}">Educational Resources</a></li>
+              <li><a class="active" href="{{url_for('blog')}}">Articles</a></li>
+              <!-- <li><a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="{{url_for('team')}}">Team</a></li>
+          <li><a class="active" href="{{url_for('blog')}}">Blog</a></li>
+
+
+          <li><a class="nav-link scrollto" href="{{url_for('contact')}}">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="../templates/phishing.html">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{{url_for('index')}}">Home</a></li>
+          <li><a href="{{url_for('blog')}}">Blog</a></li>
+          <li><a href="{{url_for('blog2')}}">Different Types of Phishing Attacks</a></li>
+        </ol>
+        <!-- <h2>Blog Single</h2> -->
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog" >
+      <div class="container" data-aos="fade-up" >
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="../assets/img/blog/blog3.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="{{url_for('blog2')}}">Different Types of Phishing Attacks: Explained and Illustrated</a>
+              </h2>
+
+
+              <div class="entry-content">
+                <p>
+                    Have you ever received an email or a message that seemed too good to be true? Or perhaps, something urgent that required you to share personal information? Well, there's a sneaky trick behind such messages – it's called phishing.
+                </p>
+
+                <p>
+                    Let's take a closer look at the different ways cyber tricksters use phishing to try and fool you online.
+                </p>
+
+                <h3>1. Deceptive Phishing: Like a Digital Disguise</h3>
+                <p>
+                    Imagine someone dressing up as your favorite superhero to trick you. Deceptive phishing is quite similar – cybercriminals dress up as trusted companies or people to steal your secrets. They send emails or messages that look real, asking for your passwords or credit card numbers.
+                </p>
+
+                <p>
+                    <b>Illustration: </b>
+                 You get an email that looks like it's from your bank, saying there's a problem with your account. It asks you to click a link to fix it. But that link leads to a fake website that's after your information.
+                </p>
+
+                <h3>2. Spear Phishing: Tailored Just for You</h3>
+                <p>
+                    Imagine a friend who knows everything about you and talks to you about things you like. Spear phishing is a bit like that – attackers learn about you and send messages that feel personal. They might use your name, job, or hobbies to trick you.
+                  </p>
+                <p>
+                    <b>Illustration: </b>
+                     Someone learns you're a soccer fan and sends you an email with soccer news. But when you click the link, bad things happen.
+                </p>
+
+                <h3>3. Whaling: Hunting the Big Fish</h3>
+                <p>
+                    Think of a big, important fish in the ocean. Whaling is like fishing for important people in the digital sea. Attackers pretend to be bosses or CEOs, trying to get secret company information.
+                </p>
+
+                <p>
+                  <b>Illustration:</b>
+                  An attacker emails a company's CEO, pretending to be a lawyer. They ask for important company secrets, and since it looks official, the CEO shares the info.
+                </p>
+
+                <h3>4. Vishing (Voice Phishing): Tricking You with Words</h3>
+
+                <p>
+                Imagine someone calling you, saying they're your friend. But they're not – they're trying to fool you. Vishing is like that – attackers call you, pretending to be banks or companies, and ask for secrets.
+                </p>
+
+                <p>
+                  <b>Illustration: </b>
+                Someone calls and says they're from your credit card company. They tell you there's a problem and ask for your card number to fix it. But it's just a trick.
+                </p>
+
+                <h3>5. Smishing (SMS Phishing): Sneaky Text Messages</h3>
+                <p>
+                Have you ever received a text saying you won a prize? Smishing is like that – attackers send fake texts with links. They want you to click the links and give them your secrets.
+                </p>
+
+                <p>
+                <b>Illustration: </b>
+                 You get a text that says you won a gift card and need to click a link to claim it. But that link isn't good for you – it's after your secrets.
+                </p>
+
+                <h3>6. Pharming: The Altered Landscape</h3>
+                <p>Visualize a gallery attendee unknowingly stepping into a distorted painting. Pharming redirects users to counterfeit websites without their consent, jeopardizing their personal data.
+                </p>
+
+                <h3>7. Baiting: Luring with Temptation</h3>
+                <p>Imagine a masterpiece with an alluring centerpiece. Baiting capitalizes on human curiosity, offering tempting rewards such as free downloads to entice victims into clicking malicious links.
+                </p>
+
+                <h3>8. Clone Phishing: Duplicating Trust, Concealing Deception</h3>
+                <p>Consider a painting with a perfect duplicate, save for one subtle change. Clone phishing mimics legitimate emails, swapping links or attachments with malicious versions to extract sensitive data.
+                </p>
+
+                <h3>9. Attachment Phishing: A Canvas of Concealed Threats</h3>
+                <p>Envision an artwork hiding its danger within layers. Attachment phishing deploys infected attachments that, when opened, release malware onto the victim's device.
+                </p>
+
+                <h3>10. Search Engine Phishing: Navigating Twisted Paths</h3>
+                <p>
+                    Picture a distorted map that guides travelers astray. Search engine phishing manipulates search results to direct users to malicious websites masquerading as legitimate sources.
+                </p>
+
+                <h3>11. Domain Spoofing: Masks of False Identity</h3>
+                <p>Imagine a masquerade ball with counterfeit masks. Domain spoofing involves attackers impersonating trusted domains to gain victims' trust and extract sensitive information.  
+                </p>
+
+                <h3>Conclusion: Staying Safe in the Digital Ocean</h3>
+                <p>Phishing is like a game of pretending, but the stakes are high. To stay safe, remember not to give your secrets to anyone who asks online. Always check if the emails, messages, or calls are really from the people or companies they claim to be. Be careful when clicking links or sharing info, and you'll be like a smart sailor, steering clear of the hidden dangers in the vast ocean of the internet.</p>
+
+              </div>
+
+
+
+            </article><!-- End blog entry -->
+
+            <div class="blog-author d-flex align-items-center">
+              <img src="../assets/img/team/hemanth.jpg" class="rounded-circle float-left" alt="">
+              <div>
+                <h4>Hemanth Naidu</h4>
+                <div class="social-links">
+                  <a target="_blank" href="https://twitter.com/i/flow/login/#"><i class="bi bi-twitter"></i></a>
+                  <a target="_blank" href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                </div>
+                <p>
+                  A passionate fourth-year student diving into the world of detecting phishing websites. Join him as he navigates through his college project, unraveling insights and strategies to identify and combat phishing threats.
+                </p>
+              </div>
+          
+            </div><!-- End blog author bio -->
+          </div>  
+
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+              <img src="../assets/img/logo.png" alt="">
+              <span>PhishSafe</span>
+            </a>
+            <p>
+              Guarding Against Phishing Threats. Paste a link, and we'll tell you if it's safe to click, ensuring your online safety. Join us to browse, work, and connect with confidence.
+            </p>
+            <div class="social-links mt-3">
+              <a target="_blank" href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a target="_blank" href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('index')}}">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('aboutus')}}">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('services')}}">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('tos')}}">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('pp')}}">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('report')}}">Report Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('quizzes')}}">Quizzes</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('ev')}}">Educational Resources</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('blog')}}">Articles</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              SVIT <br>
+              Secunderabad, Telangana 500003<br>
+              India<br><br>
+              <strong>Phone:</strong>  +91 9701346267<br>
+              <strong>Email:</strong> phishhsafe@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PhishSafe</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+ 
+  <link href="../assets/img/logo-main.png" rel="icon">
+  <!-- <link href="../assets/img/logo-main.png" rel="icon"> -->
+  <link href="../assets/img/logo-main.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <span>PhishSafe</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{{url_for('index')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a href="{{url_for('blog')}}">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="../templates/phishing.html">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Unmasking Phishy Links, One Click at a Time!</h1>
+          
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="{{url_for('phishing')}}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Get Started</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="../assets/img/hero-img.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Who We Are</h3>
+              <h2>Welcome to PhishSafe: Your Trusted Phishing Detection Partner</h2>
+              <p>
+                At PhishSafe, we are on a mission to make the digital world safer for everyone. We understand that the internet is a vital part of our daily lives, but it's also a breeding ground for phishing attacks that can compromise your security and privacy. That's why we exist – to protect you from these threats.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="{{url_for('aboutus')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="../assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Our Values</h2>
+          <p>Protection from phishing, made easy</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="../assets/img/values-1.png" class="img-fluid" alt="">
+              <h3>Welcome to PhishSafe – Your Shield Against Phishing Threats</h3>
+              <p>At PhishSafe, your online safety is our top priority. We understand the ever-evolving landscape of cyber threats, and we're dedicated to keeping you protected from phishing websites. Our platform offers a range of values that make us your trusted partner in the digital world.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <img src="../assets/img/values-2.png" class="img-fluid" alt="">
+              <h3>User-Friendly Experience</h3>
+              <p>Navigating the complexities of online security shouldn't be a challenge. That's why we've designed our platform with you in mind. Our user-friendly interface ensures that anyone can easily use our tools to verify the legitimacy of websites. Whether you're a tech-savvy individual or someone new to online security, PhishSafe is here to empower you with knowledge and protection.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="box">
+              <img src="../assets/img/values-3.png" class="img-fluid" alt="">
+              <h3>Empowering You with Knowledge</h3>
+              <p>At PhishSafe, our commitment to your online safety goes beyond just detection. We believe that knowledge is your most powerful tool in the digital world. That's why we offer a range of educational resources designed to arm you with the insights you need to stay one step ahead of phishing threats.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Values Section -->
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Features</h2>
+          <p>Features That Keep You Ahead of the Phishing Game</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="../assets/img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Detecting Phishing Link</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Report Phishing Link</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Quizzes</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Educational Resources</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Articles</h3>
+                </div>
+              </div>
+
+              <!-- <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Email/SMS Spam Checker</h3>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+
+        <!-- Feature Tabs -->
+        <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h3>Defending Against Phishing: Your Three-Step Guide</h3>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li>
+                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Awareness</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Prevention</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Reporting</a>
+              </li>
+            </ul><!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab1">
+                <p>
+                  Phishing is a sneaky trick used by cybercriminals to steal your personal information. They pretend to be someone you trust, like your bank or a friend, to trick you into giving them sensitive details like passwords or credit card numbers. It's essential to be aware of this threat.
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Recognizing Phishing</h4>
+                </div>
+                <p>
+                  Watch out for emails or messages with strange or urgent requests, spelling mistakes, or unfamiliar senders. If something seems off, it might be a phishing attempt.
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Spotting Fake Websites</h4>
+                </div>
+                <p>
+                  Always check the website's address. If it looks weird or doesn't start with "https://," be cautious. Legitimate websites have secure addresses.
+                </p>
+              </div><!-- End Tab 1 Content -->
+
+              <div class="tab-pane fade show" id="tab2">
+                <p>
+                  Preventing phishing attacks involves taking steps to protect yourself online.
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Strong Passwords</h4>
+                </div>
+                <p>
+                  Use unique and strong passwords for each of your accounts. Avoid using easily guessable information like your name or "123456."
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Two-Factor Authentication (2FA)</h4>
+                </div>
+                <p>
+                  Enable 2FA whenever possible. It adds an extra layer of security by requiring a code sent to your phone or email when you log in.
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Clicking with Caution</h4>
+                </div>
+                <p>
+                  Don't click on links or download attachments in suspicious emails or messages. Instead, verify the sender's identity using official contact information.
+                </p>
+              </div><!-- End Tab 2 Content -->
+
+              <div class="tab-pane fade show" id="tab3">
+                <p>
+                  Reporting phishing is like being a digital superhero. When you spot a phishing attempt and report it, you help protect yourself and others from online scams.
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>How to Report</h4>
+                </div>
+                <p>
+                  If you get a suspicious email or message, forward it to the right authorities or organization. They can take action to stop the cybercriminals.
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Why Report</h4>
+                </div>
+                <p>
+                  Reporting is vital because it helps experts learn about new phishing tactics and take down fake websites. It's like stopping the bad guys in their tracks.
+                </p>
+              </div><!-- End Tab 3 Content -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <img src="../assets/img/features-2.png" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- End Feature Tabs -->
+
+        <!-- Fun Facts  -->
+
+        <div class="row feature-icons" data-aos="fade-up">
+          <header class="section-header">
+            <h2>FUNFACTS</h2>
+          </header>
+
+          <div class="row">
+
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="../assets/img/features-3.png" class="img-fluid p-4" alt="">
+            </div>
+
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <div>
+                    <h4 style="font-style: italic;">Phishing = Fishing</h4>
+                    <p>
+                      The term "phishing" is like "fishing" but in the digital sea. Cybercriminals cast their nets (emails) to catch unsuspecting victims. 🎣
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <div>
+                    <h4 style="font-style: italic;">Nigerian Prince Myth</h4>
+                    <p>
+                      Ever heard of an email from a "Nigerian prince" promising riches? It's like a modern-day fairy tale, but watch out – it's a trick! 🤴💰
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <div>
+                    <h4 style="font-style: italic;">419 Scam</h4>
+                    <p>
+                      Some scams are called "419 scams" after a Nigerian criminal code section. They promise big money in exchange for a small fee, but it's just a sneaky story! 📜💸
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <div>
+                    <h4 style="font-style: italic;">Phishing Seasons</h4>
+                    <p>
+                      Phishers change tactics like the weather. Tax season often brings tax-related scams. It's like phishing has its own seasons! ☀️❄️
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <div>
+                    <h4 style="font-style: italic;">Fake Sender Trick</h4>
+                    <p>
+                      Phishers pretend to be someone they're not by using email tricks. It's like dressing up as someone else for Halloween – but scarier! 🎃👻
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <div>
+                    <h4 style="font-style: italic;">Phishing Popularity</h4>
+                    <p>
+                      Phishing is so popular among cybercriminals that they send over 3.4 billion phishing emails every day. That's like sending a message to every person on Earth, twice! 🌍💌
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- end Fun Facts -->
+
+        
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Services</h2>
+          <p>Securing your digital world. Your security, our services</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <img src="../assets/img/S logo1.png" alt="" width="100" height="100">
+              <h3>Detecting Phishing Link</h3>
+              <p>Introducing Our Phishing Link Detector. Uncover how our simple tool spots dangerous links, keeping you safe from online traps. Surf the web with confidence and peace of mind.
+
+              </p>
+              <a href="{{url_for('phishing')}}" class="read-more"><span>Click here</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <img src="../assets/img/S logo2.png" alt="" width="90" height="90">
+              <p>
+
+              </p>
+              <h3>Report Phishing Link</h3>
+              <p>Join the Fight Against Phishing. Be a cyber hero by contributing to online safety. Learn how to report phishing links and play a vital role in stopping cybercriminals in their tracks. Together, we can make the internet a safer place.
+        
+              </p>
+              <a href="{{url_for('report')}}" class="read-more"><span>Click here</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <img src="../assets/img/S logo3.jpg" alt="" width="65" height="65">
+              <p>   
+
+              </p>
+              <h3>Quizzes</h3>
+              <p>Engage in Interactive Quizzes. Sharpen your cybersecurity skills with our engaging quizzes on phishing. Identify real threats, learn valuable insights, and level up your online safety game. Get ready to outsmart cybercriminals!
+
+              </p>
+              <a href="{{url_for('quizzes')}}" class="read-more"><span>Click here</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <img src="../assets/img/S logo4.png" alt=""  height="80"  width="80">
+              <p>
+
+              </p>
+<br>
+              <h3>Educational Resources</h3>
+              <p>
+                Explore Educational Resources. Dive into a treasure trove of knowledge about phishing. Access informative videos, and tips to enhance your understanding of online threats.
+              </p>
+              <a href="{{url_for('ev')}}" class="read-more"><span>Click here</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Articles</h3>
+              <p>Delve into Informative Articles. Explore our collection of in-depth articles on phishing. From spotting red flags to understanding attack techniques, empower yourself with the knowledge needed to outsmart cyber trickery.
+
+              </p>
+              <a href="{{url_for('blog')}}" class="read-more"><span>Click here</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <img src="../assets/img/S logo5.png" alt="" height="90"  width="90">
+              <h3>Email/SMS Spam Checker</h3>
+              <p>
+                Our Email/SMS Spam Checker swiftly confirms message legitimacy upon pasting, shielding you from spam and phishing threats for secure communication. Say goodbye to unwanted messages with confidence.
+              </p>
+              <a href="../templates/esms.html" class="read-more"><span>Click here</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    What is phishing?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Phishing is a cyber attack where attackers deceive individuals into revealing sensitive information, such as passwords, credit card details, or personal data, by posing as trustworthy entities through emails, messages, or websites.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    How can I recognize a phishing email?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Phishing emails often contain spelling or grammar mistakes, generic greetings, urgent requests, or unfamiliar sender addresses. They may also include suspicious links or ask for sensitive information.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    How can I protect myself from phishing attacks?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Stay cautious:
+                    <li>Verify sender email addresses before taking action.</li>
+                    <li>Never share sensitive information through email.</li>
+                    <li>Be skeptical of urgent requests or offers that seem too good to be true.</li>
+                    <li>Use strong, unique passwords for each account.</li>
+                    <li>Enable two-factor authentication (2FA) whenever possible.</li>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    What is the danger of clicking on links or downloading attachments from phishing emails?
+                  </button>
+                </h2>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Clicking on links or downloading attachments from phishing emails can lead to malware infections, identity theft, or unauthorized access to your accounts and devices.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    What is the purpose of two-factor authentication (2FA)?
+                  </button>
+                </h2>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Two-factor authentication adds an extra layer of security by requiring a second form of verification (e.g., a code sent to your phone) in addition to your password. This makes it harder for attackers to access your accounts, even if they have your password.
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    What should I do if I suspect a phishing attempt?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    If you receive a suspicious email or message:
+                    <li>Do not click on any links or download attachments.</li>
+                    <li>Verify the sender's identity through official contact methods.</li>
+                    <li>Report the phishing attempt to your organization's IT department or the appropriate authorities.</li>
+                    <li>Educate others about the potential threat.</li>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Can anti-virus software protect against phishing?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    While anti-virus software can provide some protection, it may not catch all phishing attempts. Combining security software with user awareness and cautious online behavior is crucial for effective protection.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    How can I verify the legitimacy of a website?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    To verify a website's legitimacy:
+                    <li>Check for "https://" in the URL (indicating a secure connection).</li>
+                    <li>Look for a padlock icon next to the URL.</li>
+                    <li>Double-check the domain name for any misspellings or unusual characters.</li>
+                    <li>Avoid clicking on links in emails and instead navigate to websites directly through your browser.</li>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-4">
+                    What should I do if I believe I've fallen for a phishing attack?
+                  </button>
+                </h2>
+                <div id="faq2-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    If you suspect you've fallen for a phishing attack:
+                    <li>Change your passwords immediately on the affected accounts.</li>
+                    <li>Contact your bank or financial institution if financial information was compromised.</li>
+                    <li>Scan your devices for malware and viruses.</li>
+                    <li>Monitor your accounts for suspicious activity and consider placing fraud alerts.</li>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-5">
+                    Can I trust the display name in an email?
+                  </button>
+                </h2>
+                <div id="faq2-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    No, you should not solely rely on the display name in an email to determine its legitimacy. Cyber attackers can easily spoof or impersonate display names to make their emails appear trustworthy. Always verify the sender's email address and be cautious even if the display name seems familiar.
+                  </div>
+                </div>
+              </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+    
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Team</h2>
+          <p>Our working team</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img width="261" height="150"  src="../assets/img/team/hemanth.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a target="_blank" href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Hemanth Naidu</h4>
+                <span>Team Member 1</span>
+                <p>
+                  Hey there! I'm Hemanth Naidu, a fourth-year student at SVIT, passionate about the dynamic field of Artificial Intelligence and Machine Learning. In my latest project, I'm diving into the intriguing realm of cybersecurity by focusing on 'Detecting Phishing Websites.' 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img width="220" height="100"  src="../assets/img/team/nisha.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a target="_blank" href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Nisha Kumari</h4>
+                <span>Team Member 2</span>
+                <p>
+                  Hey there! I'm Nisha Kumari, a fourth-year student at SVIT, passionate about the dynamic field of Artificial Intelligence and Machine Learning. In my latest project, I'm diving into the intriguing realm of cybersecurity by focusing on 'Detecting Phishing Websites.' 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img width="220" height="100"  src="../assets/img/team/nikitha.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a target="_blank" href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Nikitha</h4>
+                <span>Team Member 3</span>
+                <p>
+                  Hey there! I'm Nikitha, a fourth-year student at SVIT, passionate about the dynamic field of Artificial Intelligence and Machine Learning. In my latest project, I'm diving into the intriguing realm of cybersecurity by focusing on 'Detecting Phishing Websites.' 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img width="220" height="100"  src="../assets/img/team/chnadrashekhar.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a target="_blank" href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Chandrashekhar</h4>
+                <span>Team Member 4</span>
+                <p>
+                  Hey there! I'm Chandrashekhar, a fourth-year student at SVIT, passionate about the dynamic field of Artificial Intelligence and Machine Learning. In my latest project, I'm diving into the intriguing realm of cybersecurity by focusing on 'Detecting Phishing Websites.' 
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Team Section -->
+
+    
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Blog</h2>
+          <p>Recent posts form our Blog</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="../assets/img/blog/blog1.png" class="img-fluid" alt=""></div>
+              <span class="post-date">Tue, September 15</span>
+              <h3 class="post-title">What is Phishing: Understanding Online Trickery</h3>
+              <a href="{{url_for('blog1')}}" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="../assets/img/blog/blog3.png" class="img-fluid" alt=""></div>
+              <br>
+              <span class="post-date">Fri, August 28</span>
+              <h3 class="post-title">Different Types of Phishing Attacks: Explained and Illustrated</h3>
+              <a href="{{url_for('blog2')}}" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="post-box">
+              <div class="post-img"><img src="../assets/img/blog/blog4.png" class="img-fluid" alt=""></div>
+              <br>
+              <span class="post-date">Mon, July 11</span>
+              <h3 class="post-title">How to Recognize Phishing Emails: 5 Telltale Signs to Watch For</h3>
+              <a href="{{url_for('blog3')}}" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Recent Blog Posts Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  SVIT<br>
+              Secunderabad, Telangana 500003<br>
+              India<br><br>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p> +91 9701346267<br>+91 9315454412<br> +91 7337453666<br> +91 9347873084</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>phishhsafe@gmail.com</p>
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                </div>
+              </div>
+            </div>
+
+          </div>   
+
+          <div class="col-lg-6">
+            <form method="post" autocomplete="off" name="google-sheet">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" id="message" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzRjApE0t64wdBQfzqHttOIQ9AlGDPvua0k2tYTj61YRQuOcSe3M5mKDUy-OOYY305T/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thank you for reaching out! We'll get back to you shortly."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+              <img src="../assets/img/logo.png" alt="">
+              <span>PhishSafe</span>
+            </a>
+            <p>
+              Guarding Against Phishing Threats.  Paste a link, and we'll tell you if it's safe to click, ensuring your online safety. Join us to browse, work, and connect with confidence.
+            </p>
+            <div class="social-links mt-3">
+              <a target="_blank" href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a target="_blank" href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('index')}}">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('aboutus')}}">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('services')}}">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('tos')}}">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('pp')}}">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('report')}}">Report Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('quizzes')}}">Quizzes</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('ev')}}">Educational Resources</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('blog')}}">Articles</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+             SVIT<br>
+              Secunderabad, Telangana 500003<br>
+              India<br><br>
+              <strong>Phone:</strong> +91 9701346267<br>
+              <strong>Email:</strong> phishhsafe@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

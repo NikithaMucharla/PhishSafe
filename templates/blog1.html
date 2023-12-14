@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>What is Phishing</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo-main.png" rel="icon">
+  <link href="../assets/img/logo-main.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <span>PhishSafe</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="{{url_for('index')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{url_for('aboutus')}}">About</a></li>
+          <li class="dropdown"><a href="{{url_for('services')}}"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+              <li><a href="{{url_for('report')}}">Report Phishing</a></li>
+              <li><a href="{{url_for('quizzes')}}">Quizzes</a></li>
+              <li><a href="{{url_for('ev')}}">Educational Resources</a></li>
+              <li><a class="active" href="{{url_for('blog')}}">Articles</a></li>
+              <!-- <li><a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="{{url_for('team')}}">Team</a></li>
+          <li><a class="active" href="{{url_for('blog')}}">Blog</a></li>
+          
+          <li><a class="nav-link scrollto" href="{{url_for('contact')}}">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="../templates/phishing.html">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{{url_for('index')}}">Home</a></li>
+          <li><a href="{{url_for('blog')}}">Blog</a></li>
+          <li><a href="{{url_for('blog1')}}">What is Phishing</a></li>
+        </ol>
+        <!-- <h2>Blog Single</h2> -->
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog" >
+      <div class="container" data-aos="fade-up" >
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="../assets/img/blog/blog1.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="{{url_for('blog1')}}">What is Phishing: Understanding Online Trickery</a>
+              </h2>
+
+              <div class="entry-content">
+                <p>
+                  In the sprawling world of the internet, where information flows like a river, there exists a hidden danger that's often hard to spot – phishing. Don't let the term confuse you; it's not about fishing in waters but something far more cunning. 
+                </p>
+
+                <p>
+                  In this blog, we're going to unravel the mystery of phishing in simple words, helping you stay safe while navigating the online sea.
+                </p>
+
+                <blockquote>
+                  <p>
+                    "Clicking without thought can be a snare,
+Phishing tricks hide everywhere.
+Stay alert, don't take the bait,
+Safety first, before it's too late."
+                  </p>
+                </blockquote>
+
+                <h3>What's Phishing Anyway?</h3>
+                <p>
+                  Imagine you're walking along a busy street, and someone comes up to you wearing a disguise, pretending to be a friend or a trusted person. They ask you for something personal, like your phone number or your secret password. What would you do? You'd probably be careful and not give out your secrets to a stranger, right?
+                </p>
+
+                <p>
+
+                  Well, that's what phishing is in the digital world. It's when someone online pretends to be someone you trust, like a bank, an online store, or a friend. They send you messages or emails that seem real, but their goal is to trick you into giving them your personal information, like passwords, credit card numbers, or other private stuff.
+                </p>
+
+                <h3>How Does Phishing Work?</h3>
+                <p>
+                  Think of it as a magic trick, but not a good one. The trickster sends you a message or an email that looks like it's from a real company or a friend. They might say something like, "There's a problem with your account, please click this link to fix it." But here's the catch – that link isn't taking you where you think it is. It's leading you to a fake website that's designed to steal your secrets.
+                <p>
+                  Once you're on this fake website, it might look just like the real one. You might enter your password, thinking you're fixing a problem, but in reality, you're giving your password to the trickster. They can then use this information to steal from you or do other bad things.
+                </p>
+
+                <img src="../assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
+
+                <h3>Staying Safe Against Phishing</h3>
+                <p>
+                  Now that you know what phishing is, how can you protect yourself? It's like being a detective online. Here are a few tips:
+                </p>
+
+                <p>
+                  <b>1. Check the Sender: </b>
+                  Just like you wouldn't trust a stranger on the street, be careful with emails or messages from unknown senders. Make sure they're really who they say they are
+                </p>
+
+                <p>
+                  <b>2. Don't Click Blindly: </b>
+                  If an email or message has a link, don't click on it right away. Hover your mouse over it to see where it leads. If it doesn't match the place it claims to be, don't click!
+                </p>
+
+                <p>
+                  <b>3. Keep Secrets Secret: </b>
+                  Never, ever share your passwords, credit card numbers, or personal information in response to an email or message. Legitimate companies won't ask for these things that way.
+                </p>
+
+                <p>
+                  <b>4. Use Strong Passwords: </b>
+                  Use strong, unique passwords for different accounts. This makes it harder for tricksters to guess or steal them.
+                </p>
+
+                <h3>Conclusion: Be the Detective</h3>
+                <p>Phishing might sound tricky, but by being cautious and using your detective skills, you can protect yourself from online trickery. Remember, just like you'd be careful with a stranger on the street, be careful with online messages and emails. Keep your secrets safe, and you'll sail through the online world with confidence, avoiding the traps set by those who want to take advantage of your trust.
+                </p>
+
+              </div>
+
+            
+
+            </article><!-- End blog entry -->
+
+            <div class="blog-author d-flex align-items-center">
+              <img src="../assets/img/blog/blog-author.jpg" class="rounded-circle float-left" alt="">
+              <div>
+                <h4>Chandrashekhar</h4>
+                <div class="social-links">
+                  <a target="_blank" href="https://twitter.com/i/flow/login/#"><i class="bi bi-twitter"></i></a>
+                  <a target="_blank" href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                </div>
+                <p>
+                  A passionate fourth-year student diving into the world of detecting phishing websites. Join him as he navigates through his college project, unraveling insights and strategies to identify and combat phishing threats.
+                </p>
+              </div>
+            </div><!-- End blog author bio -->
+
+
+          </div><!-- End blog entries list -->
+
+         
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="{{url_for('index')}}" class="logo d-flex align-items-center">
+              <img src="../assets/img/logo.png" alt="">
+              <span>PhishSafe</span>
+            </a>
+            <p>
+              Guarding Against Phishing Threats. Paste a link, and we'll tell you if it's safe to click, ensuring your online safety. Join us to browse, work, and connect with confidence.
+            </p>
+            <div class="social-links mt-3">
+              <a target="_blank" href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a target="_blank" href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('index')}}">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('aboutus')}}">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('services')}}">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('tos')}}">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('pp')}}">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('phishing')}}">Detecting Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('report')}}">Report Phishing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('quizzes')}}">Quizzes</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('ev')}}">Educational Resources</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('blog')}}">Articles</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="../templates/esms.html">Email/SMS Spam Checker</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              SVIT <br>
+              Secunderabad, Telangana 500003<br>
+              India<br><br>
+              <strong>Phone:</strong>  +91 9701346267<br>
+              <strong>Email:</strong> phishhsafe@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
